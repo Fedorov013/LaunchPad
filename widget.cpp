@@ -140,7 +140,7 @@ Widget::Widget(QWidget *parent) :
 
     button14 = new QPushButton(this);
     button14->setStyleSheet("border-image: url(:/images/button_blue.png)");
-    button14->setShortcut(tr("4"));
+    //button14->setShortcut(tr("4"));
     button14->show();
 
     button15 = new QPushButton(this);
