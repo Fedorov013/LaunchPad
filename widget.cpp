@@ -6,119 +6,142 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
-    this->resize(700,480);
     this->setWindowTitle("LaunchPad");
     this->setWindowIcon(QIcon(QDir::toNativeSeparators(":/images/icon.png")));
 
-    QString path = qApp->QCoreApplication::applicationDirPath();
+    //QString path = qApp->QCoreApplication::applicationDirPath();
 
     playlist11 = new QMediaPlaylist(this);
-    playlist11->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/01.mp3")));
+    //playlist11->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/01.mp3"))); //windows
+    playlist11->addMedia(QUrl("qrc:/sound/01.mp3")); //android
     playlist11->setPlaybackMode(QMediaPlaylist::CurrentItemInLoop);
     playerbutton11 = new QMediaPlayer(this);
     playerbutton11->setPlaylist(playlist11);
 
     playlist12 = new QMediaPlaylist(this);
-    playlist12->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/02.mp3")));
+    //playlist12->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/02.mp3")));
+    playlist12->addMedia(QUrl("qrc:/sound/02.mp3"));
     playlist12->setPlaybackMode(QMediaPlaylist::CurrentItemInLoop);
     playerbutton12 = new QMediaPlayer(this);
     playerbutton12->setPlaylist(playlist12);
 
     playlist13 = new QMediaPlaylist(this);
-    playlist13->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/03.mp3")));
+    //playlist13->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/03.mp3")));
+    playlist13->addMedia(QUrl("qrc:/sound/03.mp3"));
     playlist13->setPlaybackMode(QMediaPlaylist::CurrentItemInLoop);
     playerbutton13 = new QMediaPlayer(this);
     playerbutton13->setPlaylist(playlist13);
 
     playerbutton14 = new QMediaPlayer(this);
-    playerbutton14->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/13.mp3")));
+    //playerbutton14->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/13.mp3")));
+    playerbutton14->setMedia(QUrl("qrc:/sound/13.mp3"));
 
     playerbutton15 = new QMediaPlayer(this);
-    playerbutton15->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/14.mp3")));
+    //playerbutton15->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/14.mp3")));
+    playerbutton15->setMedia(QUrl("qrc:/sound/14.mp3"));
 
     playerbutton16 = new QMediaPlayer(this);
-    playerbutton16->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/15.mp3")));
+    //playerbutton16->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/15.mp3")));
+    playerbutton16->setMedia(QUrl("qrc:/sound/15.mp3"));
 
     playlist21 = new QMediaPlaylist(this);
-    playlist21->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/04.mp3")));
+    //playlist21->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/04.mp3")));
+    playlist21->addMedia(QUrl("qrc:/sound/04.mp3"));
     playlist21->setPlaybackMode(QMediaPlaylist::CurrentItemInLoop);
     playerbutton21 = new QMediaPlayer(this);
     playerbutton21->setPlaylist(playlist21);
 
     playlist22 = new QMediaPlaylist(this);
-    playlist22->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/05.mp3")));
+    //playlist22->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/05.mp3")));
+    playlist22->addMedia(QUrl("qrc:/sound/05.mp3"));
     playlist22->setPlaybackMode(QMediaPlaylist::CurrentItemInLoop);
     playerbutton22 = new QMediaPlayer(this);
     playerbutton22->setPlaylist(playlist22);
 
     playlist23 = new QMediaPlaylist(this);
-    playlist23->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/06.mp3")));
+    //playlist23->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/06.mp3")));
+    playlist23->addMedia(QUrl("qrc:/sound/06.mp3"));
     playlist23->setPlaybackMode(QMediaPlaylist::CurrentItemInLoop);
     playerbutton23 = new QMediaPlayer(this);
     playerbutton23->setPlaylist(playlist23);
 
     playerbutton24 = new QMediaPlayer(this);
-    playerbutton24->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/16.mp3")));
+    //playerbutton24->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/16.mp3")));
+    playerbutton24->setMedia(QUrl("qrc:/sound/16.mp3"));
 
     playerbutton25 = new QMediaPlayer(this);
-    playerbutton25->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/17.mp3")));
+    //playerbutton25->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/17.mp3")));
+    playerbutton25->setMedia(QUrl("qrc:/sound/17.mp3"));
 
     playerbutton26 = new QMediaPlayer(this);
-    playerbutton26->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/18.mp3")));
+    //playerbutton26->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/18.mp3")));
+    playerbutton26->setMedia(QUrl("qrc:/sound/18.mp3"));
 
     playlist31 = new QMediaPlaylist(this);
-    playlist31->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/07.mp3")));
+    //playlist31->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/07.mp3")));
+    playlist31->addMedia(QUrl("qrc:/sound/07.mp3"));
     playlist31->setPlaybackMode(QMediaPlaylist::CurrentItemInLoop);
     playerbutton31 = new QMediaPlayer(this);
     playerbutton31->setPlaylist(playlist31);
 
     playlist32 = new QMediaPlaylist(this);
-    playlist32->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/08.mp3")));
+    //playlist32->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/08.mp3")));
+    playlist32->addMedia(QUrl("qrc:/sound/08.mp3"));
     playlist32->setPlaybackMode(QMediaPlaylist::CurrentItemInLoop);
     playerbutton32 = new QMediaPlayer(this);
     playerbutton32->setPlaylist(playlist32);
 
     playlist33 = new QMediaPlaylist(this);
-    playlist33->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/09.mp3")));
+    //playlist33->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/09.mp3")));
+    playlist33->addMedia(QUrl("qrc:/sound/09.mp3"));
     playlist33->setPlaybackMode(QMediaPlaylist::CurrentItemInLoop);
     playerbutton33 = new QMediaPlayer(this);
     playerbutton33->setPlaylist(playlist33);
 
     playerbutton34 = new QMediaPlayer(this);
-    playerbutton34->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/19.mp3")));
+    //playerbutton34->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/19.mp3")));
+    playerbutton34->setMedia(QUrl("qrc:/sound/19.mp3"));
 
     playerbutton35 = new QMediaPlayer(this);
-    playerbutton35->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/20.mp3")));
+    //playerbutton35->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/20.mp3")));
+    playerbutton35->setMedia(QUrl("qrc:/sound/20.mp3"));
 
     playerbutton36 = new QMediaPlayer(this);
-    playerbutton36->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/21.mp3")));
+    //playerbutton36->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/21.mp3")));
+    playerbutton36->setMedia(QUrl("qrc:/sound/21.mp3"));
 
     playlist41 = new QMediaPlaylist(this);
-    playlist41->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/10.mp3")));
+    //playlist41->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/10.mp3")));
+    playlist41->addMedia(QUrl("qrc:/sound/10.mp3"));
     playlist41->setPlaybackMode(QMediaPlaylist::CurrentItemInLoop);
     playerbutton41 = new QMediaPlayer(this);
     playerbutton41->setPlaylist(playlist41);
 
     playlist42 = new QMediaPlaylist(this);
-    playlist42->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/11.mp3")));
+    //playlist42->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/11.mp3")));
+    playlist42->addMedia(QUrl("qrc:/sound/11.mp3"));
     playlist42->setPlaybackMode(QMediaPlaylist::CurrentItemInLoop);
     playerbutton42 = new QMediaPlayer(this);
     playerbutton42->setPlaylist(playlist42);
 
     playlist43 = new QMediaPlaylist(this);
-    playlist43->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/12.mp3")));
+    //playlist43->addMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/12.mp3")));
+    playlist43->addMedia(QUrl("qrc:/sound/12.mp3"));
     playlist43->setPlaybackMode(QMediaPlaylist::CurrentItemInLoop);
     playerbutton43 = new QMediaPlayer(this);
     playerbutton43->setPlaylist(playlist43);
 
     playerbutton44 = new QMediaPlayer(this);
-    playerbutton44->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/22.mp3")));
+    //playerbutton44->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/22.mp3")));
+    playerbutton44->setMedia(QUrl("qrc:/sound/22.mp3"));
 
     playerbutton45 = new QMediaPlayer(this);
-    playerbutton45->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/23.mp3")));
+    //playerbutton45->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/23.mp3")));
+    playerbutton45->setMedia(QUrl("qrc:/sound/23.mp3"));
 
     playerbutton46 = new QMediaPlayer(this);
-    playerbutton46->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/24.mp3")));
+    //playerbutton46->setMedia(QUrl::fromLocalFile(QDir::toNativeSeparators(path + "/sound/24.mp3")));
+    playerbutton46->setMedia(QUrl("qrc:/sound/24.mp3"));
 
     button11 = new QPushButton(this);
     button11->setStyleSheet("border-image: url(:/images/button_yellow.png)");

@@ -6,5 +6,29 @@
         <file>images/button_purple.png</file>
         <file>images/button_red.png</file>
         <file>images/button_yellow.png</file>
+        <file>sound/01.mp3</file>
+        <file>sound/02.mp3</file>
+        <file>sound/03.mp3</file>
+        <file>sound/04.mp3</file>
+        <file>sound/05.mp3</file>
+        <file>sound/06.mp3</file>
+        <file>sound/07.mp3</file>
+        <file>sound/08.mp3</file>
+        <file>sound/09.mp3</file>
+        <file>sound/10.mp3</file>
+        <file>sound/11.mp3</file>
+        <file>sound/12.mp3</file>
+        <file>sound/13.mp3</file>
+        <file>sound/14.mp3</file>
+        <file>sound/15.mp3</file>
+        <file>sound/16.mp3</file>
+        <file>sound/17.mp3</file>
+        <file>sound/18.mp3</file>
+        <file>sound/19.mp3</file>
+        <file>sound/20.mp3</file>
+        <file>sound/21.mp3</file>
+        <file>sound/22.mp3</file>
+        <file>sound/23.mp3</file>
+        <file>sound/24.mp3</file>
     </qresource>
 </RCC>
